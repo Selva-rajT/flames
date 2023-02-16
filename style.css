@@ -18,7 +18,7 @@ body{
     align-items: center;
     flex-direction: column;
     position: relative;
-    overflow: auto;
+    overflow:hidden;
     background-attachment: fixed;
     border:5px solid rgba(126, 120, 125,0.5) ;
      
