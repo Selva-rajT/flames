@@ -18,7 +18,7 @@ body{
     align-items: center;
     flex-direction: column;
     position: relative;
-    overflow:hidden;
+    /* overflow: hidden; */
     background-attachment: fixed;
     border:5px solid rgba(126, 120, 125,0.5) ;
      
@@ -36,10 +36,11 @@ body{
     top:70px;
     background-color:transparent;
     padding:60px 60px;
-    border:2px solid rgba(126, 120, 125, 0.1) ;
+    border:2px solid rgba(126, 120, 125, 0.8) ;
     border-radius: 30px;
     height:250px;
     width:300px;
+    transition:1s;
     position:relative;
     box-shadow: 4px 4px 20px rgb(240, 33, 26) inset,10px 10px 15px rgb(247, 73, 67);
 }
@@ -87,10 +88,11 @@ body{
 }
 #result{
     position:absolute;
+ 
     bottom: -1px;
     right:-10px;
     width:100vw;
-    height:50px;
+    /* height:50px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,3 +105,21 @@ body{
     display: none;
 }
 
+@media (max-width:600px){
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+       
+    }
+    .header{
+        font-size: 20px;
+    }
+    .container{
+        top:30px;
+        padding:40px 40px;
+    }
+    #result{
+        top:500px;
+    }
+
+}
